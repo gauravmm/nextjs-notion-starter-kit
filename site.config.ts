@@ -18,11 +18,15 @@ export default siteConfig({
 
   // social usernames (optional)
   twitter: 'transitive_bs',
+  twitterX: 'transitive_bs',
   github: 'transitive-bullshit',
+  gitlab: 'transitive-bullshit',
   linkedin: 'fisch2',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
-  // newsletter: '#', // optional newsletter URL
-  // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  newsletter: '#', // optional newsletter URL
+  youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  zhihu: '#', // optional zhihu username
+  bugtracker: '#', // optional bugtracker URL
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
@@ -37,6 +41,13 @@ export default siteConfig({
   // NOTE: if you enable redis, you need to set the `REDIS_HOST` and `REDIS_PASSWORD`
   // environment variables. see the readme for more info
   isRedisEnabled: false,
+
+  // whether or not search is enabled (optional)
+  // this requires support from Notion.
+  isSearchEnabled: true,
+
+  // whether or not to show the GitHub share button on the top-right.
+  isGithubShareButtonEnabled: true,
 
   // map of notion page IDs to URL paths (optional)
   // any pages defined here will override their default URL paths
